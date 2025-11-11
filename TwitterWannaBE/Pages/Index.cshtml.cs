@@ -13,7 +13,6 @@ public class IndexModel : PageModel
     private readonly ApplicationDbContext _db;
     private readonly UserManager<IdentityUser> _userManager;
 
-    // Feed size (choose between 15 and 50 as required)
     private const int FeedSize = 25;
 
     public IndexModel(ApplicationDbContext db, UserManager<IdentityUser> userManager)
@@ -47,7 +46,6 @@ public class IndexModel : PageModel
     {
         if (!User.Identity?.IsAuthenticated ?? true)
         {
-            // redirect to login if not authenticated
             return Challenge();
         }
 
@@ -58,7 +56,6 @@ public class IndexModel : PageModel
 
         if (!ModelState.IsValid)
         {
-            // reload posts so the page can render errors inline
             await OnGetAsync();
             return Page();
         }
