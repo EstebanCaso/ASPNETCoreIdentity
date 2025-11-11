@@ -1,0 +1,25 @@
+@page
+@model TwitterWannaBE.Pages.Posts.EditModel
+@{
+    ViewData["Title"] = "Editar publicación";
+}
+
+<h2>Editar publicación</h2>
+
+@if (!Model.EditAllowed)
+{
+    <div class="alert alert-warning">@Model.WarningMessage</div>
+}
+
+<form method="post">
+    <input asp-for="Input.Id" type="hidden" />
+    <div class="form-group">
+        <label asp-for="Input.Content"></label>
+        <textarea asp-for="Input.Content" class="form-control" rows="3" maxlength="140" disabled="@(Model.EditAllowed ? null : "disabled")"></textarea>
+        <span asp-validation-for="Input.Content" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary" disabled="@(Model.EditAllowed ? null : "disabled")">Guardar</button>
+    <a asp-page="/Index" class="btn btn-secondary ms-2">Cancelar</a>
+</form>
+
+<partial name="_ValidationScriptsPartial" />

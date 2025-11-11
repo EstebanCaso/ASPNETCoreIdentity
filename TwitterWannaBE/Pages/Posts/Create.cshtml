@@ -1,0 +1,19 @@
+@page
+@model TwitterWannaBE.Pages.Posts.CreateModel
+@{
+    ViewData["Title"] = "Crear publicación";
+}
+
+<h2>Crear publicación</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Input.Content"></label>
+        <textarea asp-for="Input.Content" class="form-control" rows="3" maxlength="140"></textarea>
+        <span asp-validation-for="Input.Content" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Publicar</button>
+    <a asp-page="/Index" class="btn btn-secondary ms-2">Cancelar</a>
+</form>
+
+<partial name="_ValidationScriptsPartial" />
