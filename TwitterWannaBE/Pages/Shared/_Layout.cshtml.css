@@ -1,5 +1,15 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿
+:root {
+    --tw-blue: #1DA1F2;
+    --tw-blue-600: #1a94e6;
+    --tw-blue-700: #0d8bd9;
+    --tw-text: #0f1419;
+    --tw-muted: #536471;
+    --tw-border: #e6ecf0;
+    --tw-bg: #ffffff;
+    --tw-shadow: 0 .25rem .75rem rgba(15,20,25,.06);
+    --tw-radius: 12px;
+}
 
 a.navbar-brand {
   white-space: normal;
@@ -11,16 +21,92 @@ a {
   color: #0077cc;
 }
 
+    a:hover, a:focus {
+        color: var(--tw-blue-700);
+    }
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
+    .btn-primary:hover, .btn-primary:focus {
+        background-color: var(--tw-blue-700);
+        border-color: var(--tw-blue-700);
+    }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+.twb-flex {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.twb-content {
+    flex: 1 0 auto;
+}
+
+.twb-content > main.pb-3 {
+    padding-bottom: 0 !important;
+}
+
+.twb-footer {
+    margin-top: auto;
+    line-height: 60px;
+    background: var(--tw-bg);
+}
+
+.footer {
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    margin-top: auto;
+}
+
+.twb-navbar {
+    box-shadow: var(--tw-shadow);
+}
+
+.twb-brand .twb-logo {
+    width: 28px;
+    height: 28px;
+    max-width: 28px;
+    max-height: 28px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.twb-navbar img {
+    max-width: none;
+    height: auto;
+}
+
+.twb-navbar .nav-link {
+    color: var(--tw-muted);
+    font-weight: 600;
+}
+
+    .twb-navbar .nav-link:hover,
+    .twb-navbar .nav-link:focus {
+        color: var(--tw-blue);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .twb-navbar .nav-link.active,
+    .twb-navbar .nav-link[aria-current="page"] {
+        color: var(--tw-blue) !important;
+    }
+
+.btn:focus {
+    box-shadow: 0 0 0 .2rem rgba(29,161,242,.25);
 }
 
 .border-top {
@@ -39,10 +125,10 @@ button.accept-policy {
   line-height: inherit;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+.privacy-bigbird {
+    width: 100%;
+    max-width: 900px; 
+    display: block;
+    margin: 24px auto;
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,.08));
 }
