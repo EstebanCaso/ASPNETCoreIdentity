@@ -7006,6 +7006,7 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 9.0.10",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.10",
       "Microsoft.AspNetCore.Identity.UI >= 9.0.10",
+      "Microsoft.CodeAnalysis.Analyzers >= 3.3.4",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.10",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.10",
@@ -7013,24 +7014,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eecas\\.nuget\\packages\\": {}
+    "C:\\Users\\alexa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eecas\\OneDrive\\Escritorio\\ASPNETCoreIdentity\\TwitterWannaBE\\TwitterWannaBE.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\source\\repos\\ASPNETCoreIdentity\\TwitterWannaBE\\TwitterWannaBE.csproj",
       "projectName": "TwitterWannaBE",
-      "projectPath": "C:\\Users\\eecas\\OneDrive\\Escritorio\\ASPNETCoreIdentity\\TwitterWannaBE\\TwitterWannaBE.csproj",
-      "packagesPath": "C:\\Users\\eecas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eecas\\OneDrive\\Escritorio\\ASPNETCoreIdentity\\TwitterWannaBE\\obj\\",
+      "projectPath": "C:\\Users\\alexa\\source\\repos\\ASPNETCoreIdentity\\TwitterWannaBE\\TwitterWannaBE.csproj",
+      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexa\\source\\repos\\ASPNETCoreIdentity\\TwitterWannaBE\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\eecas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7066,6 +7074,12 @@
           "Microsoft.AspNetCore.Identity.UI": {
             "target": "Package",
             "version": "[9.0.10, )"
+          },
+          "Microsoft.CodeAnalysis.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.3.4, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
