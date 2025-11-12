@@ -24,11 +24,17 @@ html {
     }
 }
 
-body {
-    margin-bottom: 60px; 
+body { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
     background: var(--tw-bg-soft);
     color: var(--tw-text);
     line-height: 1.5;
+}
+
+main[role="main"] {
+    flex: 1 0 auto;
 }
 
 a {
