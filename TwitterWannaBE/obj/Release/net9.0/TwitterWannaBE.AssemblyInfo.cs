@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwitterWannaBE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bc9387abe1df6600cbc52e16456d3cb0577e7dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b029bd39ad5aeaa54557ea990e91aacf3ac14af")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwitterWannaBE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwitterWannaBE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

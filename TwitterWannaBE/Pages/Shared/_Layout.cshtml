@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - TwitterWannaBE</title>
     <meta name="theme-color" content="#1DA1F2" />
-
     <script type="importmap"></script>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TwitterWannaBE.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body class="twb-flex">
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow twb-navbar">
             <div class="container">
                 <a class="navbar-brand twb-brand d-flex align-items-center gap-2" asp-area="" asp-page="/Index" aria-label="TwitterWannaBE home">
-                    <span class="twb-bird" aria-hidden="true">🐦</span>
+                    <img src="~/bigbird.jpg"
+                         alt=""
+                         class="twb-logo"
+                         width="28" height="28" />
                     <span>TwitterWannaBE</span>
                 </a>
 
@@ -43,7 +45,7 @@
         </nav>
     </header>
 
-    <div class="container twb-container">
+    <div class="container twb-content">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
